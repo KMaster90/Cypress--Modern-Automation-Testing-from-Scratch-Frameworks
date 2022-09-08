@@ -19,7 +19,7 @@ export class HomePage {
     }
 
     getTwoDataBindingBox() {
-        return cy.get('h4>input[name="name"]');
+        return cy.get<HTMLInputElement>('h4>input[name="name"]');
     }
 
     getEntrepreneurRadioButton() {

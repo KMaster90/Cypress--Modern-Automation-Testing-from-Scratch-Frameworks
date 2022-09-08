@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["es5", "dom"],
+    "moduleResolution": "node",
+    "target": "es6",
+    "lib": ["es6", "dom"],
     "types": ["cypress", "node","cypress-iframe"]
   },
   "include": ["**/*.ts"]

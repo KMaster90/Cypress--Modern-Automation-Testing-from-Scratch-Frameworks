@@ -2,3 +2,4 @@ node_modules
 cypress/results
 mochawesome.json
 mochawesome-report
+reports

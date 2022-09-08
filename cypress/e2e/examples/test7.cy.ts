@@ -3,7 +3,7 @@
 import {CheckoutPage, HomePage, ShopCart, ShopPage, Toolbar, User} from "../../fixtures/classes";
 
 describe('empty spec', () => {
-    before(() => {
+    before(function() {
         cy.visit(Cypress.env('angularPractice'));
 
         // cy.fixture('example').then((data) => {
@@ -12,7 +12,7 @@ describe('empty spec', () => {
 
         this.data = new User();
     });
-    it('passes', () => {
+    it('passes', function() {
         const homePage = new HomePage();
         const toolbar = new Toolbar();
         const shopPage = new ShopPage();

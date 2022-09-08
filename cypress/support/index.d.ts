@@ -2,7 +2,7 @@ export {}
 declare global {
     namespace Cypress {
         interface Chainable {
-            iframeLoaderPaolo(iframeSelector: string):void;
+            iframeLoaderPaolo(iframeSelector: string): void;
             iframePaolo():  Cypress.Chainable<HTMLIFrameElement>;
             selectProduct(...productName: string[]): void;
         }

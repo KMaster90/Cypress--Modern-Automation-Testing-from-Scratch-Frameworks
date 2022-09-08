@@ -5,7 +5,7 @@ describe('empty spec', () => {
         cy.visit(Cypress.env('automationPractice'));
     });
 
-    xit('passes', () => {
+    it('passes', () => {
 
         // Alert
         cy.get('#alertbtn').click();
