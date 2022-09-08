@@ -5,11 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run-mocha": "cypress run --reporter mochawesome --reporter-options reportDir='cypress/results',overwrite=false,html=false,json=true",
+    "cypress:mocha-merge": "npx mochawesome-merge 'cypress/results/*.json' > mochawesome.json",
+    "cypress:report": "npx marge mochawesome.json",
+    "cypress:dashboard": "npx cypress run --record --key c54b5c10-cb50-4f6d-ae2a-dcb18c176acc"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^10.7.0"
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "cypress": "^10.7.0",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0",
+    "typescript": "^4.8.2"
   }
 }
